@@ -1,4 +1,13 @@
-﻿// Please see documentation at https://learn.microsoft.com/aspnet/core/client-side/bundling-and-minification
-// for details on configuring this project to bundle and minify static web assets.
+﻿document.getElementById("btnCalc").addEventListener("click", function () {
 
-// Write your JavaScript code.
+    const hourlyRate = 30; // Your hourly rate
+    const hours = document.getElementById("hours").value;
+
+    // Validation to make sure a positive number is entered
+    if (hours && hours > 0) {
+        const totalCost = hourlyRate * hours;
+        document.getElementById("total-cost").innerText = `$${totalCost.toFixed(2)}`;
+    } else {
+        alert("Please enter a positive number for hours.");
+    }
+});

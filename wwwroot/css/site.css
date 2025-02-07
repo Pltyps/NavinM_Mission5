@@ -1,22 +1,132 @@
-html {
-  font-size: 14px;
+:root {
+    --bs-body-font-family: Muli, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica Neue, Arial, sans-serif, Apple Color Emoji, Segoe UI Emoji, Segoe UI Symbol, Noto Color Emoji;
+    --bs-body-font-size: 1rem;
+    --bs-body-font-weight: 400;
+    --bs-body-line-height: 1.5;
+    --bs-body-text-align: center; /* Added text alignment variable */
 }
 
-@media (min-width: 768px) {
-  html {
-    font-size: 16px;
-  }
+
+.panel {
+    background-color: rgb(42, 117, 187);
+    color: rgb(255, 203, 5);
+    width: auto;
+    font-size: 32px;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    border: solid 3px rgb(60, 90, 166);
 }
 
-.btn:focus, .btn:active:focus, .btn-link.nav-link:focus, .form-control:focus, .form-check-input:focus {
-  box-shadow: 0 0 0 0.1rem white, 0 0 0 0.25rem #258cfb;
+    .panel:hover {
+        background-color: rgb(255, 203, 5);
+        color: rgb(42, 117, 187);
+        width: auto;
+        font-size: 40px;
+        font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+        border: solid 3px rgb(60, 90, 166);
+    }
+
+h2 {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 27px;
 }
 
-html {
-  position: relative;
-  min-height: 100%;
+h3 {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 14px;
+    font-style: italic;
+    margin-top: -21px;
 }
 
 body {
-  margin-bottom: 60px;
+    font-family: var(--bs-body-font-family);
+    background-color: white;
+    font-size: var(--bs-body-font-size);
+    font-weight: var(--bs-body-font-weight);
+    line-height: var(--bs-body-line-height);
+    color: Black;
+    text-align: var(--bs-body-text-align);
+    -webkit-text-size-adjust: 100%;
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+    background-image: url('../img/background1.png');
+    background-size: cover; /* Changed to cover */
+    overflow-y: scroll;
+}
+
+img {
+    width: 22%;
+    display: block;
+    border: solid 3px rgb(0, 0, 0);
+    padding: 5px; /* Fixed padding issue */
+    margin: auto;
+    margin-top: 3px;
+    margin-bottom: 20px;
+}
+
+.video {
+    margin: auto;
+    margin-top: 200px;
+    margin-bottom: 100px;
+}
+
+.tableauPlaceholder {
+    margin: auto;
+    margin-top: 200px;
+    margin-bottom: 10px;
+}
+
+.list_item {
+    background-color: rgba(0, 0, 0, 0.04);
+    border: solid 6.2px rgba(0, 0, 0, 0.04);
+    margin: auto;
+    margin-top: 25px;
+    margin-bottom: 25px;
+}
+
+.button {
+    background-color: black;
+    color: white;
+    width: auto;
+    font-size: 22px;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    border: solid 3px white;
+    margin-bottom: 100px;
+}
+
+    .button:hover {
+        background-color: white;
+        color: black;
+        width: auto;
+        font-size: 30px;
+        font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+        border: solid 3px black;
+    }
+
+.footer {
+    width: 100%;
+    font-size: large;
+    font-style: normal;
+    text-align: center;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    background-color: rgb(42, 117, 187);
+    color: rgb(255, 203, 5);
+    position: fixed;
+    bottom: 0px;
+    opacity: 77%;
+    padding: 10px 0; /* Added padding */
+}
+
+label, #total-cost {
+    display: inline;
+    margin-right: 10px; /* Optional: adds some space between the label and the total */
+}
+
+/* Media Query for responsiveness */
+@media (max-width: 768px) {
+    .panel, .button {
+        font-size: 20px;
+    }
+
+    img {
+        width: 50%;
+    }
 }

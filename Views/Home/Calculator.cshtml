@@ -1,0 +1,33 @@
+﻿@*
+    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
+*@
+@{
+}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Hobby Tutor</title>
+</head>
+<body>
+
+    <h1>Interested to learn more?</h1>
+    <h2>I tutor individuals and groups. Fill up the fields to get an estimate.</h2>
+
+    <label for="hours">Estimated Number of Hours:</label>
+    <input type="number" id="hours" placeholder="Enter hours" />
+    <br>
+
+    <label for="rate">My Rate (per hour):</label>
+    <input type="text" id="rate" value="$30/hour" readonly />
+    <br>
+    <br>
+    <br>
+    <label>Total Estimate:</label>
+    <p id="total-cost">$0.00</p>
+
+
+    <input type="submit" value="Calculate" id="btnCalc" />
+    <br>
+    <script src="js/site.js"></script>
+</body>
+</html>
